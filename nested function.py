@@ -3,4 +3,7 @@ def outer():
         print("outer function")
     print("inner function")
     inner()
-outer()            
+outer()  
+
+#----------------------------------------------------------------------------------
+
