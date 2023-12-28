@@ -8,5 +8,16 @@ def diplay(sh):
 def show():
     print("this is show function")
 
-diplay(show())    
+diplay(show()) 
 
+#---------------------------------------------------------------------------------
+
+def create_machine(mach):
+    def machine():
+        print("this is machine")
+    print("machine is created")    
+    return machine()
+
+def manufacture():
+    print("machine manufacture")
+x = create_machine(manufacture())
