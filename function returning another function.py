@@ -33,3 +33,13 @@ def machine():
 
 design = create_machine(machine)
 
+#--------------------------------------------------------------------------------------------
+
+def create_multiplier(factor):
+    def multiplier(x):
+        return x * factor
+    return multiplier
+
+y = create_multiplier(2)(5)
+print(y)
+
