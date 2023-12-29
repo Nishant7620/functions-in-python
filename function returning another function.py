@@ -21,3 +21,15 @@ def create_machine(mach):
 def manufacture():
     print("machine manufacture")
 x = create_machine(manufacture())
+
+#--------------------------------------------------------------------------------------
+
+def create_machine(mach):
+    print("This is create machine function")
+    return mach
+
+def machine():
+    print("this is machine function")
+
+design = create_machine(machine)
+
