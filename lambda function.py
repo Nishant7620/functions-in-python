@@ -27,3 +27,11 @@ x,y,z = calc(5,3)
 print(x)
 print(y)
 print(z)
+
+#--------------------------------------------------------------------------
+# passing default argument to lambda function
+
+cal = lambda a,b=5:(a/b)
+
+result = cal(10)
+print(result)
