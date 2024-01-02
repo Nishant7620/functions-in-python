@@ -81,3 +81,16 @@ sqr = power_function(2)(5)            #sqr = power_function(2)
 print(sqr)                            #sqr(5)                  
                                       #print(sqr)          
 
+#---------------------------------------------------------------------------------------
+
+def calculation(operation):
+    if operation =="add":
+        return lambda x,y:x+y
+    elif operation =="sub":
+        return lambda x,y:x-y
+    else:
+        return lambda x,y:x*y
+
+calc = calculation("add")
+result = calc(5,3)
+print(result)            
