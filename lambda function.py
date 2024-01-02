@@ -62,3 +62,10 @@ p = nested(5)(3)(2)
 print(p)
 
 #---------------------------------------------------------------------------------
+#passing lambda function to another function
+
+def mul(lamb):
+    print(f"the result of lambda function {lamb(5,3)}")
+
+lamb = lambda a,b:a*b
+mul(lamb)
