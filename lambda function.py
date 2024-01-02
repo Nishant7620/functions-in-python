@@ -35,3 +35,11 @@ cal = lambda a,b=5:(a/b)
 
 result = cal(10)
 print(result)
+
+#-------------------------------------------------------------------------
+#nested lambda function
+
+nested = lambda y :lambda z :(y+z)
+
+result = nested(5)
+print(result(3))
