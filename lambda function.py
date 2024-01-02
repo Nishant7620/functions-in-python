@@ -69,3 +69,15 @@ def mul(lamb):
 
 lamb = lambda a,b:a*b
 mul(lamb)
+
+#----------------------------------------------------------------------------------
+#returning lambda function from another function
+
+def power_function(exponent):
+    return lambda x:x**exponent
+
+
+sqr = power_function(2)(5)            #sqr = power_function(2)
+print(sqr)                            #sqr(5)                  
+                                      #print(sqr)          
+
