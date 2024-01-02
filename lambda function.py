@@ -43,3 +43,22 @@ nested = lambda y :lambda z :(y+z)
 
 result = nested(5)
 print(result(3))
+
+#----------------------------------------------------------------------------
+
+nested  = lambda x:(lambda y:(lambda z:(x+y+z)))
+
+p = nested(5)
+q = p(3)
+r = q(2)
+
+print(r)
+
+#----------------------------------------------------------------------------------
+#above function also can be written as:
+nested  = lambda x:(lambda y:(lambda z:(x+y+z)))
+
+p = nested(5)(3)(2)
+print(p)
+
+#---------------------------------------------------------------------------------
