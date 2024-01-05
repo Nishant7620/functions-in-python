@@ -1,9 +1,10 @@
-def fact(num):
-    if num<=1:
+def factorial(num):
+    if num==0 or num ==1:
         return 1
 
     else:
 
-     return  num * fact(num-1)
+     return  num * factorial(num-1)
 
-print(fact(5))
+num = 5
+print(f" factorical of a number {num} is: {factorial(num)}")
