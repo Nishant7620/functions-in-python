@@ -1,4 +1,4 @@
-"""
+
 def factorial(num):
     if num==0 or num ==1:
         return 1
@@ -9,7 +9,7 @@ def factorial(num):
 
 num = 5
 print(f" factorical of a number {num} is: {factorial(num)}")
-"""
+
 #--------------------------------------------------------------------------------
 
 def fibonacci(n):
